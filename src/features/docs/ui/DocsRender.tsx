@@ -25,7 +25,7 @@ export function DocsRender() {
   )
 
   return (
-    <article className="prose prose-amber prose-pre:p-0 prose-pre:bg-amber-400 max-w-none">
+    <article className="prose p-4 prose-amber prose-pre:p-0 prose-pre:bg-amber-400 max-w-none overflow-y-auto">
       <Markdown
         remarkPlugins={[remarkGfm]}
         components={{

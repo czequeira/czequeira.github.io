@@ -4,7 +4,7 @@ import { Link } from "react-router";
 export function DocsHeader() {
   return (
     <header className="">
-      <div className="container mx-auto py-4 flex justify-between gap-4">
+      <div className="container bg-amber-50 mx-auto p-4 flex justify-between gap-4">
         <div>
           <Link to={'/'}>Bitterer</Link>
         </div>

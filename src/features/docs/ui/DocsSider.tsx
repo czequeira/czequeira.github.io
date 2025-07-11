@@ -15,7 +15,7 @@ export function DocsSider() {
   }, [])
 
   return (
-    <aside className="bg-amber-50 w-64 h-full">
+    <aside className="bg-amber-50 w-64 h-full overflow-y-scroll">
       <DocsSiderItem
         to={''}
         items={items}
