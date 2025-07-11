@@ -1,0 +1,59 @@
+[
+  {
+    "title": "Get started",
+    "to": "/docs/get-started",
+    "redirect": "/docs/get-started/introduction",
+    "items": [
+      {
+        "title": "Introduction",
+        "to": "/docs/get-started/introduction"
+      },
+      {
+        "title": "Installation",
+        "to": "/docs/get-started/installation"
+      }
+    ]
+  },
+  {
+    "title": "Docs",
+    "to": "/docs/docs",
+    "redirect": "/docs/docs/bits/declarations",
+    "items": [
+      {
+        "title": "Bits",
+        "to": "/docs/docs/bits",
+        "redirect": "/docs/docs/bits/declarations",
+        "items": [
+          {
+            "title": "Declarations",
+            "to": "/docs/docs/bits/declarations"
+          },
+          {
+            "title": "Scopes",
+            "to": "/docs/docs/bits/scopes"
+          },
+          {
+            "title": "Injections",
+            "to": "/docs/docs/bits/injections"
+          },
+          {
+            "title": "Lifecycle",
+            "to": "/docs/docs/bits/lifecycle"
+          }
+        ]
+      },
+      {
+        "title": "Config",
+        "to": "/docs/docs/config"
+      },
+      {
+        "title": "Browser integration",
+        "to": "/docs/docs/browser-integration"
+      }
+    ]
+  },
+  {
+    "title": "Examples",
+    "to": "/docs/examples"
+  }
+]
