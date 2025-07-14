@@ -1,4 +1,5 @@
 import { Link, useLocation } from "react-router"
+import type { INavigation } from "../../core/domain/INavigation"
 
 const LEVELS = {
   0: 'pl-4',
@@ -7,12 +8,8 @@ const LEVELS = {
   3: 'pl-16',
 }
 
-export interface DocsSiderItemProps {
-  title?: string
-  items?: DocsSiderItemProps[]
-  to: string
+export interface DocsSiderItemProps extends INavigation {
   level?: 0 | 1 | 2 | 3
-  redirect?: string
 }
 
 export function DocsSiderItem({ title, items, to, level, redirect }: DocsSiderItemProps) {

@@ -1,12 +1,15 @@
-import axios from "axios";
-import { DocsSiderItem, type DocsSiderItemProps } from "./DocsSiderItem";
+import { useBit } from "bitterer/browser";
+import { DocsSiderItem } from "./DocsSiderItem";
 import { useEffect, useState } from "react";
+import type { INavigation } from "../../core/domain/INavigation";
+import { NavigationService } from "../../core/domain/NavigationService";
 
 export function DocsSider() {
-  const [items, setItems] = useState<DocsSiderItemProps[]>([])
+  const [items, setItems] = useState<INavigation[]>([])
+  const navigationService = useBit<NavigationService>('navigationService')
 
   const init = async () => {
-    const {data} = await axios.get<DocsSiderItemProps[]>(`/navigation.json`)
+    const data = await navigationService.getNavigations()
     setItems(data)
   }
 
