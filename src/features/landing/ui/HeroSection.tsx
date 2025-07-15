@@ -8,16 +8,19 @@ export function HeroSection() {
 
   return (
     <section className="h-96 bg-linear-to-r from-amber-50 to-amber-500">
-      <div className="container mx-auto flex flex-col gap-2 justify-center h-full">
-        <h1 className="text-2xl text-amber-800 font-bold">
+      <div className="container mx-auto flex flex-col gap-2 p-4 justify-center h-full">
+        <h1 className="text-4xl text-amber-800 font-bold">
           Bitterer
         </h1>
         <h2 className="text-xl text-amber-800">
-          Sunt cillum fugiat amet eiusmod elit quis aliqua id dolor.
+          Lightweight IoC Container for TypeScript
         </h2>
+        <h3 className="text-xl text-amber-600 italic">
+          Inspired by Spring, optimized for modern TypeScript apps
+        </h3>
         <div className="flex gap-2">
           <Button isPrimary onClick={getStarted}>Get started</Button>
-          <Button>Source code</Button>
+          {/* <Button>Source code</Button> */}
         </div>
       </div>
     </section>

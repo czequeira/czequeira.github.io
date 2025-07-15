@@ -1,4 +1,4 @@
-import { AboutUsSection } from "./AboutUsSection";
+import { ContactSection } from "./ContactSection";
 import { FeatureSection } from "./FeatureSection";
 import { HeroSection } from "./HeroSection";
 import { LandingHeader } from "./LandingHeader";
@@ -9,7 +9,7 @@ export function LandingPage() {
       <LandingHeader />
       <HeroSection />
       <FeatureSection />
-      <AboutUsSection />
+      <ContactSection />
     </>
   )
 }

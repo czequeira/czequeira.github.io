@@ -35,9 +35,9 @@ export function DocsSiderItem({ title, items, to, level, redirect }: DocsSiderIt
       <Link
         to={to}
         state={{redirect}}
-        className={`hover:bg-amber-300 p-2 ${LEVELS[level || 0]
-        } ${isExactSelected ? 'bg-amber-200' :
-          isSelected ? 'bg-amber-100' : ''
+        className={`hover:bg-amber-600 p-2 ${LEVELS[level || 0]
+        } ${isExactSelected ? 'bg-amber-900' :
+          isSelected ? 'bg-amber-800' : ''
         }`}
       >
         {title}
